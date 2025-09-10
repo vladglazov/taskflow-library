@@ -17,7 +17,7 @@ class Task {
     }
     
     addLabel(label) {
-        if (label && !this.labels.includes(label)) {
+        if (label && !this.labels.includes(label) && this.label.length <= 5) {
             this.labels.push(label);
         }
     }
